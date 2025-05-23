@@ -1,0 +1,239 @@
+/* ================================
+   Variables de color y tipografía
+   ================================ */
+:root {
+  --beige: #E4D9D5;
+  --teal: #7AAEB0;
+  --gris-oscuro: #2E3A47;
+  --gris-claro: #A0A0A0;
+  --blanco: #FFFFFF;
+  --font-base: 'Arial', sans-serif;
+}
+
+/* ================================
+   Reset y estilos generales
+   ================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--blanco);
+  color: var(--gris-oscuro);
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: var(--blanco);
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+
+/* ================================
+   Sidebar (columna izquierda)
+   ================================ */
+.sidebar {
+  width: 36%;
+  background-color: var(--beige);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Marco de la foto */
+.photo-frame {
+  width: 100px;
+  height: 100px;
+  background-color: var(--gris-claro);
+  border: 4px solid var(--teal);
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.photo-frame .photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Títulos de sección en sidebar */
+.section-title {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gris-oscuro);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--teal);
+}
+
+/* Contenido “Sobre mí” */
+.sobre-mi .section-content p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* Lista de contacto */
+.contact-list {
+  list-style: none;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--gris-oscuro);
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/* Para diferenciar íconos (teléfono, correo, ubicación) */
+.icon-phone::before    { content: '📞'; font-size: 0.9rem; line-height: 20px; display: block; text-align: center; }
+.icon-mail::before     { content: '✉️'; font-size: 0.9rem; line-height: 20px; display: block; text-align: center; }
+.icon-location::before { content: '📍'; font-size: 0.9rem; line-height: 20px; display: block; text-align: center; }
+
+.contact-text {
+  font-size: 0.9rem;
+  color: var(--gris-oscuro);
+}
+
+/* ================================
+   Main Content (columna derecha)
+   ================================ */
+.main-content {
+  width: 70%;
+  background-color: var(--blanco);
+  padding: 20px 40px;
+}
+
+/* Cabecera con nombre */
+.header {
+  background-color: var(--teal);
+  padding: 20px 30px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+/* ================================
+   Secciones principales
+   ================================ */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Listado de experiencias y estudios */
+.list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background-color: var(--gris-oscuro);
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 15px;
+}
+
+.item-content {
+  flex: 1;
+}
+
+.item-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--gris-oscuro);
+  display: inline-block;
+}
+
+.item-date {
+  font-size: 0.85rem;
+  color: var(--gris-claro);
+  margin-left: 8px;
+}
+
+.item-content p {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  text-align: justify;
+}
+
+/* ================================
+   Lista de habilidades
+   ================================ */
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.skill-item::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--gris-oscuro);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* ================================
+   Ajustes responsivos
+   ================================ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar, .main-content {
+    width: 100%;
+  }
+  .main-content {
+    padding: 10px;
+  }
+  .header {
+    text-align: center;
+  }
+  .header .name {
+    font-size: 1.75rem;
+  }
+} 

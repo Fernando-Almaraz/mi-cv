@@ -1,133 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pagina.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum – Fernando Almaraz</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-        <input type="checkbox" class="header__checkbox" id="open-menu">
-        <label for="open-menu" class="header__open-nav-button" role="button"> =</label>
-    <div class="header__logo-container">
-        <img class="header__logo" src="logo.jpg">
-    </div>
-    <nav class="header__nav">
-        <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#">ABOUT</a></li>
-            <li class="header__nav-item"><a href="#">PORTAFOLIO</a></li>
-            <li class="header__nav-item"><a href="#">CONTACT</a></li>
+  <!-- Aquí abrimos el contenedor flex -->
+  <div class="container">
+    <!-- Columna izquierda -->
+    <aside class="sidebar">
+      <!-- Foto -->
+      <div class="photo-frame">
+        <img src="fotomia.jpg" alt="Foto de Fernando Almaraz" class="photo" />
+      </div>
+      
+      <!-- Sección: Sobre mí -->
+      <section class="section sobre-mi">
+        <h2 class="section-title">SOBRE MÍ</h2>
+        <div class="section-content">
+          <p>Hola, tengo 22 años y trabajo desde los 14. He adquirido experiencia en atención a cliente, manejo de software de inventarios, labores de taller y como segundo en un restaurante; cuento con cartas de recomendación.</p>
+          <p>En mi tiempo libre pinto, practico piano y disfruto de videojuegos. Me apasiona aprender de forma autónoma sobre historia, ciencia y tecnología, especialmente programación.</p>
+          <p>Con experiencia en captura de información y manejo de herramientas tecnológicas. Mi objetivo es aportar valor desde mi rol actual, al mismo tiempo que amplío mis competencias en sistemas y desarrollo web para asumir mayores responsabilidades dentro de la organización.</p>
+        </div>
+      </section>
+      
+      <!-- Sección: Contacto -->
+      <section class="section contacto">
+        <h2 class="section-title">CONTACTO</h2>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="icon icon-phone"></span>
+            <span class="contact-text">479 378 6819</span>
+          </li>
+          <li class="contact-item">
+            <span class="icon icon-mail"></span>
+            <span class="contact-text">almaraz02120@gmail.com</span>
+          </li>
+          <li class="contact-item">
+            <span class="icon icon-location"></span>
+            <span class="contact-text">Col. León 2</span>
+          </li>
         </ul>
-    </nav>
-    </header>
-    <main class="profile">
-        <div class="profile__wrapper">
-            <div class="profile__img-container">
-                <img src="Charles.webp" class="profile__img">
-            </div>
-            <div class="profile__data-container">
-                <div class="profile__data">
-                    <div class="profile__description">
-                        <h1>QUIEN ES DARWIN?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, laborum necessitatibus eaque amet cum sit repudiandae pariatur distinctio officiis tempore totam fugit quaerat placeat ipsum qui reiciendis et? Aliquid, cupiditate.</p>
-                    </div>
-                    <div class="profile__skills-container">
-                        <h2>SKILLS</h2>
-                        <ul>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--80">80%</div>
-                                </div>
-                                <span class="profile__skill-name">HTML</span>
-                            </li>
-
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--80">80%</div>
-                                </div>
-                                <span class="profile__skill-name">css</span>
-                            </li>
-
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--60">60%</div>
-                                </div>
-                                <span class="profile__skill-name">js</span>
-                            </li>
-
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">python</span>
-                            </li>
-
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--90">90%</div>
-                                </div>
-                                <span class="profile__skill-name">sql</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+      </section>
+    </aside>
+    
+    <!-- Columna derecha -->
+    <main class="main-content">
+      <!-- Cabecera con nombre -->
+      <header class="header">
+        <h1 class="name">FERNANDO ALMARAZ</h1>
+      </header>
+      
+      <!-- Sección: Experiencia Laboral -->
+      <section class="section experiencia">
+        <h2 class="section-title">EXPERIENCIA LABORAL</h2>
+        
+        <div class="list-item">
+          <div class="bullet"></div>
+          <div class="item-content">
+            <h3 class="item-title">INDUSTRIAS BORIS <span class="item-date">2024–2025</span></h3>
+            <p>Empresa dedicada a la creación y exportación de productos de plástico, toppers, limpieza. Mi puesto consistía en realizar el surtido e inventario del producto a enviar; aprendí a manejar terminal y, también, los inventarios en SQL y entarimado de producto.</p>
+          </div>
         </div>
+        
+        <div class="list-item">
+          <div class="bullet"></div>
+          <div class="item-content">
+            <h3 class="item-title">ARTE Y COLOR <span class="item-date">2023–2024</span></h3>
+            <p>Las actividades que hacía en Arte y Color iban enfocadas al diseño y creación de objetos publicitarios, como pegar vinil, colocar toldos, hacer los acabados de las lonas publicitarias, entre otros.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="bullet"></div>
+          <div class="item-content">
+            <h3 class="item-title">SAKURA RAMEN <span class="item-date">2021–2023</span></h3>
+            <p>Aprendí a preparar todo el menú, atención al cliente como mesero; también aprendí a hacer corte de caja. Después de un año me ascendieron a asistente de encargado, me dieron la responsabilidad de hacer el inventario de insumos y la coordinación del personal.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Sección: Estudios -->
+      <section class="section estudios">
+        <h2 class="section-title">ESTUDIOS</h2>
+        
+        <div class="list-item">
+          <div class="bullet"></div>
+          <div class="item-content">
+            <h3 class="item-title">UNIVERSIDAD UTL <span class="item-date">2020–2021</span></h3>
+            <p>Tecnologías de la informática, cursados 6 semestres, sigo aprendiendo de forma autónoma.</p>
+          </div>
+        </div>
+        
+        <div class="list-item">
+          <div class="bullet"></div>
+          <div class="item-content">
+            <h3 class="item-title">PREPARATORIA UVEG <span class="item-date">2017–2020</span></h3>
+            <p>Programación y administración, concluida.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Sección: Habilidades -->
+      <section class="section habilidades">
+        <h2 class="section-title">HABILIDADES</h2>
+        <ul class="skills-list">
+          <li class="skill-item">Manejo de paquetería de Office</li>
+          <li class="skill-item">Manejo de herramientas eléctricas y manuales</li>
+          <li class="skill-item">Conocimiento avanzado de HTML y CSS; en curso para Java y SQL</li>
+          <li class="skill-item">Software de inventarios Neodata, manejo de terminales</li>
+          <li class="skill-item">Sentido de urgencia (aprendido durante mis días como mesero y cocinero)</li>
+          <li class="skill-item">Aprendo rápido y me adapto rápido (me gusta aprender)</li>
+          <li class="skill-item">Gestión de equipo de trabajo (aprendido especialmente en Sakura, a coordinar un equipo de trabajo)</li>
+        </ul>
+      </section>
     </main>
-    <section class="portfolio">
-        <h2 class="portfolio__title">PORTAFOLIO SECTION</h2>
-        <div class="potfolio__project-container">
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">PROYECT</h2>
-            </div>
-        </div>
-</section>
-<section class="form">
-    <h2 class="form__title">CONTACT</h2>
-    <form class="form__form">
-        <div class="form__input-container">
-            <label> nombre
-                <input type="text" placeholder="jhon doe">
-            </label>
-        </div>
-        <div class="form__input-container">
-            <label> apellido
-                <input type="text" placeholder="jhon doe">
-            </label>
-        </div>
-        <div class="form__input-container">
-            <label>E-mail
-                <input type="email" placeholder="jhondoe@example.com">
-            </label>
-        </div>
-        <div class="form__input-container">
-            <label>mensaje
-                <textarea type="text" placeholder="your message"></textarea>
-            </label>
-        </div>
-        <div class="form__input-container">
-            
-                <input type="submit">
-            
-        </div>
-    </form>
-</section>
+  </div> <!-- Cierra .container -->
 </body>
 </html>
